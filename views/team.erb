@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%="#{@name}"%></title>
+  </head>
+  <body>
+    <h1><%= "#{@name}"%></h1>
+    <ul>
+      <% @teams[@name].each do |position, name|%>
+      <li><%= "#{position}: #{name}"%></li>
+      <%end%>
+    </ul>
+  </body>
+
+</html>

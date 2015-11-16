@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Basic HTML Page</title>
+  </head>
+  <body>
+    <ul>
+      <% @teams.each do |k, v|%>
+      <li><a href = "/teams/<%= k %>"> <%= k %> </a></li>
+      <%end%>
+  </ul>
+  </body>
+
+</html>
